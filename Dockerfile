@@ -1,5 +1,6 @@
 FROM centos:latest
 MAINTAINER rajeeb
+RUN yum clean all
 RUN yum install -y httpd \
 zip \
 unzip
