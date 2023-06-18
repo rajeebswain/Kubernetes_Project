@@ -1,6 +1,9 @@
 - hosts: all 
   become: true 
   tasks: 
+    - name: debug working directory
+      debug:
+        msg: "{{ ansible_env.PWD }}"
     - name: create new deployment 
       command: kubectl apply -f Deployment.yml
     - name: create new service 
