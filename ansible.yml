@@ -4,5 +4,5 @@
     - name: create new deployment 
       command: kubectl apply -f /home/ec2-user/Deployment.yml
     - name: create new service 
-      command: kubectl apply -f Service.yml
+      command: kubectl apply -f /home/ec2-user/Service.yml
 
